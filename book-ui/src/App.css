@@ -1,0 +1,270 @@
+/* Reset and Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+.app-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #003366;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+  text-align: center;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+  color: #0056b3;
+}
+
+/* Form styling */
+form {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Book grid */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.book-card img {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.no-image {
+  height: 150px;
+  background: #ccc;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.book-card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #007bff;
+  height: 40px;
+  overflow: hidden;
+}
+
+.book-card .author {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.book-card .desc {
+  font-size: 13px;
+  color: #444;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.read-more {
+  color: #007bff;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background: #007bff;
+  color: white;
+}
+
+/* Home page image */
+img.home-banner {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .book-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+.home-container {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+/* .glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 30px 50px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  max-width: 600px;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.glass-card h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-card p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+.hero-tagline {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: gold;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-title .highlight {
+  background: linear-gradient(to right, #a18cd1, #fbc2eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  max-width: 700px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
